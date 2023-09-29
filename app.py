@@ -1,6 +1,5 @@
 from flask import Flask ,request,render_template,redirect,url_for
 from pymongo import MongoClient
-import datetime as dt
 import urllib.parse
 passw = "Aswath22@data"
 p = urllib.parse.quote(passw)
