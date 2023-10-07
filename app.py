@@ -1,8 +1,8 @@
-from flask import Flask ,request,render_template,redirect,url_for
+from flask import Flask,render_template
 from pymongo import MongoClient
 import certifi
 ca = certifi.where()
-app = Flask(__name__,template_folder='template',static_url_path="/static")
+app = Flask(__name__,template_folder='template')
 cl = MongoClient('mongodb+srv://mohammedaswath141:Aswath22%40data@cluster0.54i4ysr.mongodb.net/Hospital?retryWrites=true&w=majority',tlsCAFile=ca)
 
 db = cl['Hospital']
